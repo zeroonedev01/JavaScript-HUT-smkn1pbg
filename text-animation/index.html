@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Text animation</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<div class="content">
+  <div class="content__container">
+    <p class="content__container__text">
+      Hello
+    </p>
+    
+    <ul class="content__container__list">
+      <li class="content__container__list__item">world !</li>
+      <li class="content__container__list__item">boy !</li>
+      <li class="content__container__list__item">girl !</li>
+      <li class="content__container__list__item">everybody !</li>
+    </ul>
+  </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+<script>
+setTimeout("location.href = 'http://localhost:8080/HutSmega/ucapan/';",6000);
+  var i = 30;
+
+function startTimer() {
+
+    var countdownTimer = setInterval(function() {
+
+        console.log(i);
+        i = i - 1;
+
+        if (i <= 0) {
+            clearInterval(countdownTimer);
+        }
+
+    }, 1000);
+
+}
+
+startTimer(); 
+</script>
+
+</body>
+
+</html>

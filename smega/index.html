@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery-latest.min.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Animation</title>
+  <style type="text/css"> html, body { margin:0; padding:0; overflow:hidden }</style>
+  <script src="animate.js"></script>
+</head>
+<body>
+  <div id="txt">HAPPY BIRTHDAY 1 PURBALINGGA</div>
+  <canvas id="canvas"></canvas>
+  <canvas id="birthday"></canvas>
+  <script  src="index.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+     
+
+     $("#txt").hide();
+      setTimeout("location.href = 'http://localhost:8080/HutSmega/';",85000);
+     var i = 360;
+
+     function startTimer() {
+
+      var countdownTimer = setInterval(function() {
+
+        console.log(i);
+        i = i - 1;
+
+        if (i <= 0) {
+          clearInterval(countdownTimer);
+        }
+
+      }, 1000);
+
+    }
+
+    startTimer(); 
+  });
+
+</script>
+</body>
+</html>
